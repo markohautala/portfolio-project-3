@@ -1,0 +1,56 @@
+
+/*generic stylerules*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: lightblue;
+
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+#search-bar {
+    height: 50px;
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, .3);
+    margin-left: 45px;
+
+}
+
+#weather-section {
+    border: 3px solid black;
+    border-radius: 30px;
+    height: 450px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 45px;
+
+}
+
+
+.night {
+    background: rgb(19, 24, 98);
+    background: -moz-linear-gradient(83deg, rgba(19, 24, 98, 1) 13%, rgba(46, 68, 130, 1) 100%);
+    background: -webkit-linear-gradient(83deg, rgba(19, 24, 98, 1) 13%, rgba(46, 68, 130, 1) 100%);
+    background: linear-gradient(83deg, rgba(19, 24, 98, 1) 13%, rgba(46, 68, 130, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#131862", endColorstr="#2e4482", GradientType=1);
+}
