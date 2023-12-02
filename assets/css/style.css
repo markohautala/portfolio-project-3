@@ -15,45 +15,115 @@ body {
     margin: 0;
     padding: 0;
     background-color: #130754;
+    transition: all 0.5s;
 }
 
-    #main-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-    }
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
 
-    #search-bar {
-        width: 230px;
-        height: 30px;
-        margin-top: 40px;
-        font-size: 20px;
-        border-radius: 10px;
-        outline: none;
-        border: none;
-        padding-left: 30px;
-    }
+#weather-section {
+    border: 3px solid black;
+    border-radius: 30px;
+    height: 450px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+}
 
-    #weather-section {
-        border: 3px solid black;
-        border-radius: 30px;
-        height: 450px;
-        width: 300px;
-        background-color: rgba(0, 0, 0, .3);
-        display: flex;
-        justify-content: center;
+.top-search-functions {
+    height: 100px;
+    width: 300px;
+    display: flex;
+}
 
+#search-text-bar {
+    width: 200px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-left: 30px;
+}
 
-    }
+/*styling of search icon*/
+.search-button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 8px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
 
-    .night {
-        background: rgb(134, 138, 232);
-        background: linear-gradient(62deg, rgba(134, 138, 232, 1) 0%, rgba(19, 7, 84, 1) 100%);
-    }
+.weather-icon-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    footer {
-        width: 100%;
-        height: 100px;
-        align-self: flex-end;
-    }
+.rain {
+    background-image: url('/assets/images/rain.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 15px 30px;
+}
+
+.sunny {
+    background-image: url('/assets/images/sun.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 15px 30px;
+}
+
+.windy {
+    background-image: url('/assets/images/wind.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 15px 30px;
+}
+
+.background-gradient {
+    background: rgb(134, 138, 232);
+    background: linear-gradient(62deg, rgba(134, 138, 232, 1) 0%, rgba(19, 7, 84, 1) 100%);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    align-self: flex-end;
+}
