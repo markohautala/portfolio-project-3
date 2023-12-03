@@ -8,14 +8,20 @@ url = f'http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}'
 
 response = requests.get(url)
 
+# This Python code checks if an API request is successful (status code 200), 
+# extracts temperature, weather description, and prints the information. 
+# If the request is unsuccessful, it prints an error message 
+# indicating the city could not be found.
+
 if response.status_code == 200:
     data = response.json()
     temperature = data['main']['temp']
     desc = data['weather'][0]['description']
-    desc = data['weather'][0]['wind']
+    wind = data['wind']['speed']
+    
     print(f'Temperature: {temperature} K')
     print(f'Weather: {desc}')
-    print(f'Wind: {wind}')
+    print(f'Wind Speed: {wind} m/s')
 else:
     print('Cannot find the specific city')
     
