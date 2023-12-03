@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Kanit&family=Noto+Sans&family=Roboto+Slab&family=Saira+Semi+Condensed:wght@500&display=swap');
 
 /*generic stylerules*/
 * {
@@ -23,16 +23,30 @@ body {
     font-family: 'Kanit', 'Roboto Slab', sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.header-title {
+    color: white;
+    text-decoration: none;
+    font-family: 'Saira Semi Condensed';
+}
+
 #main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 #weather-section {
-    border: 3px solid black;
-    border-radius: 30px;
+    border: 1.5px solid black;
+    border-radius: 25px;
     height: 450px;
     width: 300px;
     background-color: rgba(0, 0, 0, .3);
@@ -55,7 +69,7 @@ body {
     border-radius: 10px;
     outline: none;
     border: none;
-    padding-left: 30px;
+    padding-left: 17px;
 }
 
 /*styling of search icon*/
@@ -103,7 +117,7 @@ body {
 
 .output-location-text {
     color: white;
-    font-size: larger;
+    font-size: 25px;
 
 }
 
@@ -161,6 +175,7 @@ body {
     color: white;
     margin-top: 10px;
     font-size: larger;
+    margin-bottom: 17px;
 }
 
 .fa-wind {
@@ -178,6 +193,14 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    font-size: 45px;
+}
+.temperature-data {
+    margin-left: 30px;
+}
+
+.wind-data {
+    margin-left: 30px;
 }
 
 .background-gradient {
@@ -187,6 +210,25 @@ body {
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 80px;
     align-self: flex-end;
+}
+
+#social-section {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 180%;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+#social-section i {
+    color: white;
+    transition: color 0.5s ease;
+
+}
+
+#social-section i:hover {
+    color: #797BD7;
 }
