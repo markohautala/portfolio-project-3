@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans&family=Roboto+Slab&display=swap');
+
 /*generic stylerules*/
 * {
     padding: 0;
@@ -16,6 +18,7 @@ body {
     padding: 0;
     background-color: #130754;
     transition: all 0.5s;
+    font-family: 'Kanit', 'Roboto Slab', sans-serif;
 }
 
 #main-container {
@@ -36,7 +39,7 @@ body {
 }
 
 .top-search-functions {
-    height: 100px;
+    height: 90px;
     width: 300px;
     display: flex;
 }
@@ -75,6 +78,19 @@ body {
     justify-content: center;
 }
 
+.output-location-section {
+    height: 60px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-location-text {
+    color: white;
+
+}
+
 .rain {
     background-image: url('/assets/images/rain.gif');
     background-position: center center;
@@ -87,6 +103,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 10px 15px 30px;
+    margin: 10px 0;
 }
 
 .sunny {
@@ -101,6 +118,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 10px 15px 30px;
+    margin: 10px 0;
 }
 
 .windy {
@@ -115,6 +133,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 10px 15px 30px;
+    margin: 10px 0;
 }
 
 .background-gradient {
