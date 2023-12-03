@@ -69,7 +69,15 @@ body {
     margin-left: 8px;
     outline: none;
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
+    transition: background-color 0.5s ease-in-out, border-radius 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: white;
+}
+
+.search-button:hover {
+    color: white;
+    background-color: #797BD7;
+    border-radius: 30px;
 }
 
 .weather-icon-section {
@@ -79,15 +87,21 @@ body {
 }
 
 .output-location-section {
-    height: 60px;
+    height: 40px;
     width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.fa-location-dot {
+    color: white;
+    margin-right: 5px;
+}
+
 .output-location-text {
     color: white;
+    font-size: larger;
 
 }
 
@@ -134,6 +148,34 @@ body {
     align-items: center;
     box-shadow: 10px 15px 30px;
     margin: 10px 0;
+}
+
+.temperature-wind-section {
+    width: 300px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+.fa-wind {
+    margin: 0 5px 0 13px;
+}
+
+.fa-temperature-three-quarters {
+    margin-right: 5px;
+}
+
+.temp-wind-data-section {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .background-gradient {
