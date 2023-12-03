@@ -73,7 +73,7 @@ body {
 }
 
 /*styling of search icon*/
-.search-button {
+.submit-button {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -90,7 +90,7 @@ body {
     background-color: white;
 }
 
-.search-button:hover {
+.submit-button:hover {
     color: white;
     background-color: #797BD7;
     border-radius: 30px;
