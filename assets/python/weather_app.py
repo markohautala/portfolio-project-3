@@ -8,11 +8,16 @@ url = f'http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}'
 
 response = requests.get(url)
 
-# This Python code checks if an API request is successful (status code 200),
-# extracts temperature, feels_like temperature, weather description, and prints the information.
-# If the request is unsuccessful, it prints an error message
-# indicating the city could not be found.
+# This Python code above asks the user for a city name, then uses that name 
+# to check the weather using an online service called OpenWeatherMap. 
+# It gets the weather information by sending a API KEY along with the city name, 
+# and stores the results in the response variable.
 
+# This code below, If the weather data request was successful (status code 200), 
+# the code extracts temperature, feels-like temperature, weather description, 
+# and wind speed from the received data and prints them. 
+# Otherwise, it prints an error message indicating 
+# that the specific city couldn't be found.
 if response.status_code == 200:
     data = response.json()
     current_temperature_kelvin = data['main']['temp']
